@@ -11,3 +11,8 @@ User.create(username: "Jonsnow", password: "password")
 User.create(username: "Arya", password: "password")
 User.create(username: "Frodo", password: "password")
 User.create(username: "Gandalf", password: "password")
+
+Message.create(body: "Hi! I'm a new message", user: User.first )
+Message.create(body: "Just chilling", user: User.find(2) )
+Message.create(body: "Where am I?", user: User.find(3) )
+Message.create(body: "How is Waldo?", user: User.last )
